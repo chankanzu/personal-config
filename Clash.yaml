@@ -123,69 +123,7 @@ dns:
       # - 240.0.0.0/4
 
 
-proxies: [{}]
-
-proxy-groups: 
-  - name: Outside
-    type: select
-    proxies: 
-      - Hong Kong
-      - Taiwan
-      - Japan
-      - Singapore
-      - United States 
-      - Proxy
-      - DIRECT
-  - name: Stream
-    type: select
-    proxies: 
-      - Hong Kong
-      - Taiwan
-      - Japan
-      - Singapore
-      - United States 
-      - Proxy
-      - DIRECT
-  - name: Final
-    type: select
-    proxies: 
-      - Hong Kong
-      - Taiwan
-      - Japan
-      - Singapore
-      - United States 
-      - Proxy
-      - DIRECT
-  - name: Hong Kong
-    type: load-balance
-    proxies: []
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: Taiwan
-    type: load-balance
-    proxies: []
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: Japan
-    type: load-balance
-    proxies: []
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: Singapore
-    type: load-balance
-    proxies: []
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: United States
-    type: load-balance
-    proxies: []
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: Proxy
-    type: select
-    proxies: []
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+proxies: 
 
 rules:
 # Advertising
